@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de Números</title>
+    <!--Recebe 3 números do usuário e apresenta a média desses números-->
+    <link rel="shortcut icon" href="comando-vetor.ico">
+    <link rel="stylesheet" href="style.css">
+    <script>
+       function calcularMedia() {
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+        let num3 = parseFloat(document.getElementById("num3").value);
+        let media = (num1 + num2 + num3) / 3;
+        document.getElementById("resultado").innerHTML = "A média é: " + media.toFixed(2)
+       } 
+    </script>
+</head>
+<body>
+    <header class="header">Cálculo de média</header>
+    <br><br><h2>Informe 3 números e calcule a média entre eles</h2><br><br>
+    <label for="num1">Número 1</label>
+    <input type="number" id="num1" required><br><br>
+    <label for="num2">Número 2</label>
+    <input type="number" id="num2" required><br><br>
+    <label for="num3">Número 3</label>
+    <input type="number" id="num3" required><br><br>
+    <button onclick="calcularMedia()">Calcular Média</button><br><br>
+    <div id="resultado"></div><br><br><br>
+    <footer class="footer">Desenvolvido por Debora Dimitruk para Descodificadas Trilha 2 1/2024</footer>
+</body>
+</html>
