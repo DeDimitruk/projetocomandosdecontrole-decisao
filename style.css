@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(178, 245, 186);
+    padding: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color:rgba(71, 175, 69, 0.871);
+}
+
+.header{
+    background-color: rgba(71, 175, 69, 0.871);
+    padding: 20px;
+    font-size: 40px;
+    color: rgb(178, 245, 186);
+}
+
+.footer{
+    background-color: rgba(71, 175, 69, 0.871);
+    padding: 20px;
+    font-size: 15px;
+    color: rgb(178, 245, 186);
+}
+
+button{
+    background-color: rgba(71, 175, 69, 0.871)
+}
