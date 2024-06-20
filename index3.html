@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual é o mês</title>
+    <!--Insere valor de 1 a 12 somente e diz qual é o mês correspondente; se número não estiver no intervalo, dizer que é inválido-->
+    <link rel="shortcut icon" href="comando-vetor.ico">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function checkMonth() {
+            let num = parseInt(document.getElementById("num").value);
+            if (num == 1) {
+                alert("Janeiro");
+            }
+            if (num == 2) {
+                alert("Fevereiro");
+            }
+            if (num == 3) {
+                alert("Março");
+            }
+            if (num == 4) {
+                alert("Abril");
+            }
+            if (num == 5) {
+                alert("Maio");
+            }
+            if (num == 6) {
+                alert("Junho");
+            }
+            if (num == 7) {
+                alert("Julho");
+            }
+            if (num == 8) {
+                alert("Agosto");
+            }
+            if (num == 9) {
+                alert("Setembro");
+            }
+            if (num == 10) {
+                alert("Outubro");
+            }
+            if (num == 11) {
+                alert("Novembro");
+            }
+            if (num == 12) {
+                alert("Dezembro");
+            }
+            else {
+                alert("Número inválido");
+            }
+        }
+    </script>
+</head>
+<body>
+    <header class="header">Meses do Ano</header>
+    <br><br><h2>Informe um número e descubra o mês correspondente</h2><br><br>
+    <label for="num">número</label>
+    <input type="number" id="num"><br><br>
+    <button onclick="checkMonth()">Verificar</button><br><br><br>
+    <div id="checkMonth"></div><br><br><br>
+
+
+    <footer class="footer">Desenvolvido por Debora Dimitruk para Descodificadas Trilha 2 1/2024</footer>
+</body>
+</html>
